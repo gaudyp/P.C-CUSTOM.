@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaudy Polanco | Custom Creations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <h1>Gaudy Polanco</h1>
+    <a href="https://www.instagram.com/p.c.customc?igsh=OXJjejZkeXRlcDlv" target="_blank">Instagram</a>
+  </nav>
+
+  <header>
+    <h2>We customize your needs</h2>
+  </header>
+
+  <main>
+    <section class="services">
+      <h3>Our Services</h3>
+
+      <div class="service">
+        <h4>Handmade Candles</h4>
+        <p>Vegan. Items may include additional materials or use methods that aren’t considered sustainable features on our site. <strong>$40 per item</strong></p>
+      </div>
+
+      <div class="service">
+        <h4>Keychains</h4>
+        <p>Personalized acrylic keychains, Cricut name tag, passport holder, diaper bag tag. <strong>$25 per item</strong></p>
+      </div>
+
+      <div class="service">
+        <h4>Souvenirs</h4>
+        <p>Looking for a memorable gift? Share the joy with your guest and leave them a lasting token of your celebration. <strong>$30 per item</strong></p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>Let’s Get in Touch</h3>
+      <p>Tell me a little about your project below, or email me directly at <a href="mailto:gaudypolanco@gmail.com">gaudypolanco@gmail.com</a>.</p>
+
+      <form action="https://formsubmit.co/gaudypolanco@gmail.com" method="POST" onsubmit="showThanks(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="service" required>
+          <option value="">Select a Service</option>
+          <option value="Handmade Candles">Handmade Candles</option>
+          <option value="Keychains">Keychains</option>
+          <option value="Souvenirs">Souvenirs</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="thanks-message" style="display:none;">Thank you for your interest! Please allow 1-3 business days for an answer. Looking forward to working together.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
