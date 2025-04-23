@@ -1,173 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gaudy Polanco | PC Custom</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #F3DBC3;
-      color: #000;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #804000;
+  color: #000;
+}
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #804000;
-      color: white;
-    }
+header {
+  background-color: #F3DBC3;
+  color: #000;
+  padding: 2em;
+  text-align: center;
+}
 
-    .nav-left {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
+nav {
+  margin-top: 1em;
+}
 
-    .nav-right a {
-      color: #F3DBC3;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a {
+  color: #804000;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    header {
-      background-color: #804000;
-      color: white;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
+.services {
+  padding: 2em;
+  background: #F3DBC3;
+  margin: 1em auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  max-width: 1200px;
+}
 
-    section {
-      padding: 2rem;
-    }
+.services h2 {
+  color: #804000;
+  text-align: center;
+  margin-bottom: 1em;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
 
-    .services {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+li {
+  flex: 1 1 30%;
+  background-color: white;
+  padding: 1em;
+  border-radius: 10px;
+  border-left: 5px solid #804000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    .item {
-      flex: 1 1 calc(33.333% - 2rem);
-      background-color: white;
-      padding: 1rem;
-      margin: 1rem;
-      border-left: 6px solid #804000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+li strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
 
-    .item h3 {
-      margin-top: 0;
-      font-size: 1.1rem;
-    }
+li::after {
+  content: attr(data-price);
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #804000;
+}
 
-    .price {
-      font-size: 1.3rem;
-      font-weight: bold;
-      color: #804000;
-      margin-top: 0.5rem;
-    }
+.contact {
+  padding: 2em;
+  background: #F3DBC3;
+  margin: 2em auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
 
-    .contact-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+.contact h2 {
+  color: #804000;
+}
 
-    form {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 5px;
-      max-width: 600px;
-      width: 100%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
+form > * {
+  width: 100%;
+  max-width: 500px;
+}
 
-    button {
-      background-color: #804000;
-      color: white;
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+input, select, textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-    button:hover {
-      background-color: #a65a00;
-    }
+button {
+  background-color: #804000;
+  color: white;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
 
-    footer {
-      background-color: #804000;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+button:hover {
+  background-color: #5c2f00;
+}
 
-    @media screen and (max-width: 768px) {
-      .item {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
-</head>
-<body>
+.thank-you-message {
+  margin-top: 1em;
+  color: #333;
+}
 
-  <nav>
-    <div class="nav-left">Gaudy Polanco</div>
-    <div class="nav-right">
-      <a href="https://www.instagram.com/p.c.customc?igsh=OXJjejZkeXRlcDlv" target="_blank">Instagram</a>
-    </div>
-  </nav>
-
-  <header>
-    <h1>We customize your needs</h1>
-  </header>
-
-  <section>
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="item">
-        <h3>Handmade Candles</h3>
-        <p>Vegan. Items may include additional materials or use methods that aren’t considered sustainable features on our site.</p>
-        <div class="price">$40</div>
-      </div>
-      <div class="item">
-        <h3>Keychains</h3>
-        <p>Personalized acrylic keychains: Cricut name tag, passport holder name tag, diaper bag tag, and more!</p>
-        <div class="price">$25</div>
-      </div>
-      <div class="item">
-        <h3>Souvenirs</h3>
-        <p>Looking for a memorable gift? Share the joy with your guest and leave them a lasting token of your celebration.</p>
-        <div class="price">$30</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <h2>Let’s get in touch</h2>
-    <p>Tell me a little bit about your project below, or email me directly at <a href="mailto:gaudypolanco@gmail.com">gaudypolanco@gmail.com</a>.</p>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <label>Name:</label>
-      <input type="text" name="name" placeholder="PC Custom" required />
-
-      <
