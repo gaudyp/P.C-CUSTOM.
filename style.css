@@ -1,14 +1,173 @@
-<ul>
-  <li data-price="$40 per item">
-    <strong>Handmade candles</strong>
-    Vegan, artisanal items. Items may include additional materials or methods not considered sustainable.
-  </li>
-  <li data-price="$25 per item">
-    <strong>Keychains</strong>
-    Personalized acrylic keychains, Cricut name tag, passport holder name tag, diaper bag, custom name keychain.
-  </li>
-  <li data-price="$30 per item">
-    <strong>Souvenirs</strong>
-    Memorable gifts for events. Share the joy with your guests and give them a lasting token.
-  </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaudy Polanco | PC Custom</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #F3DBC3;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #804000;
+      color: white;
+    }
+
+    .nav-left {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .nav-right a {
+      color: #F3DBC3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      background-color: #804000;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .services {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item {
+      flex: 1 1 calc(33.333% - 2rem);
+      background-color: white;
+      padding: 1rem;
+      margin: 1rem;
+      border-left: 6px solid #804000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .item h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #804000;
+      margin-top: 0.5rem;
+    }
+
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 5px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #804000;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a65a00;
+    }
+
+    footer {
+      background-color: #804000;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">Gaudy Polanco</div>
+    <div class="nav-right">
+      <a href="https://www.instagram.com/p.c.customc?igsh=OXJjejZkeXRlcDlv" target="_blank">Instagram</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>We customize your needs</h1>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="item">
+        <h3>Handmade Candles</h3>
+        <p>Vegan. Items may include additional materials or use methods that aren’t considered sustainable features on our site.</p>
+        <div class="price">$40</div>
+      </div>
+      <div class="item">
+        <h3>Keychains</h3>
+        <p>Personalized acrylic keychains: Cricut name tag, passport holder name tag, diaper bag tag, and more!</p>
+        <div class="price">$25</div>
+      </div>
+      <div class="item">
+        <h3>Souvenirs</h3>
+        <p>Looking for a memorable gift? Share the joy with your guest and leave them a lasting token of your celebration.</p>
+        <div class="price">$30</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Let’s get in touch</h2>
+    <p>Tell me a little bit about your project below, or email me directly at <a href="mailto:gaudypolanco@gmail.com">gaudypolanco@gmail.com</a>.</p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="PC Custom" required />
+
+      <
