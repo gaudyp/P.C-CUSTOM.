@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #804000;
+  color: #F3DBC3;
+}
+
+nav {
+  background: black;
+  color: #F3DBC3;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #F3DBC3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  background-color: #F3DBC3;
+  color: #804000;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+.services, .contact {
+  padding: 40px 20px;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+
+.service h4 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+button {
+  background-color: #F3DBC3;
+  color: #804000;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+
+#thanks-message {
+  margin-top: 20px;
+  color: #F3DBC3;
+  text-align: center;
+  font-weight: bold;
+}
