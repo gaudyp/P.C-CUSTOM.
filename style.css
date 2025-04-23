@@ -1,13 +1,13 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #804000;
+  background-color: #F3DBC3;
   color: #000;
 }
 
 header {
-  background-color: #F3DBC3;
-  color: #000;
+  background-color: #804000;
+  color: white;
   padding: 2em;
   text-align: center;
 }
@@ -17,82 +17,38 @@ nav {
 }
 
 nav a {
-  color: #804000;
+  color: #F3DBC3;
   margin-left: 10px;
   text-decoration: none;
-  font-weight: bold;
 }
 
-.services {
+.services, .contact {
   padding: 2em;
-  background: #F3DBC3;
-  margin: 1em auto;
+  background: #fff;
+  margin: 1em;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
-  max-width: 1200px;
 }
 
-.services h2 {
+.services h2, .contact h2 {
   color: #804000;
-  text-align: center;
-  margin-bottom: 1em;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
 }
 
 li {
-  flex: 1 1 30%;
-  background-color: white;
+  margin-bottom: 1em;
   padding: 1em;
-  border-radius: 10px;
+  background-color: #F3DBC3;
   border-left: 5px solid #804000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-li strong {
-  display: block;
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-li::after {
-  content: attr(data-price);
-  display: block;
-  margin-top: 0.5em;
-  font-weight: bold;
-  color: #804000;
-}
-
-.contact {
-  padding: 2em;
-  background: #F3DBC3;
-  margin: 2em auto;
-  border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 0 10px #ccc;
-  text-align: center;
-}
-
-.contact h2 {
-  color: #804000;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-form > * {
-  width: 100%;
-  max-width: 500px;
 }
 
 input, select, textarea {
@@ -111,15 +67,10 @@ button {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1em;
-  transition: background 0.3s;
 }
 
 button:hover {
   background-color: #5c2f00;
 }
 
-.thank-you-message {
-  margin-top: 1em;
-  color: #333;
-}
 
